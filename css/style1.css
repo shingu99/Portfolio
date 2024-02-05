@@ -1,0 +1,95 @@
+
+html {
+  scroll-behavior: smooth;
+}
+header{
+    /* background-image: linear-gradient(black, white); */
+    background-color: black;
+    height:800px;
+}
+
+body
+{
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.card
+{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  border: 2px solid white;
+  transition: all 0.2s ease;
+}
+
+.card-title{
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#section1 button a{
+  color: white;
+  text-decoration: none;
+}
+
+.hoverReveal:hover + .hide{
+  display: block;
+  text-align: center;
+}
+.projects:hover{
+  box-shadow: 5px 6px 6px 2px grey;
+  transform: scale(1.05);
+}
+
+#awsCard{
+  transform: scale(1.05);
+}
+
+.nav_menu {
+    padding-top: 20px;  
+    display: flex;
+    align-items: center;
+  }
+  .nav_menu .nav-item {
+    margin: 0 2rem;
+  }
+  .nav-item .nav-link {
+    font-size: 15px;
+    line-height: 27px;
+    color: white;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+  }
+  .nav-link:hover {
+    color: red;
+  }
+
+.hide{
+  display: none;
+}
+
+#arrowUp{
+  font-size: 20px;
+  color: rgb(177, 0, 0);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+#arrowDown{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.projects img{
+  padding: 20px;
+  height: 250px;
+}
+
+.footer a{
+  font-family: 'Fjalla One', sans-serif;
+  text-decoration: none;
+  color: white;
+}

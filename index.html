@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- ==== STYLE.CSS ==== -->
+    <link rel="stylesheet" href="css/style1.css" />
+
+    <!-- ====  REMIXICON CDN ==== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/62fc297007.js" crossorigin="anonymous"></script>
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Quicksand:wght@500&family=Rock+Salt&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Fjalla+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <header id="head1">
+        
+        <!-- Navbar -->
+        <nav class=" navbar navbar-expand-lg navbar-light container">
+          <div class="container row">
+            <div class="col-sm-3" style="text-align: center; padding-top: 20px; font-family: 'Rock Salt', cursive;">
+              <h3 id="myName">Raghav Shankar</h3>
+            </div>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+              data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="collapse navbar-collapse container offset-3 col-sm-7" id="navbarExample01" >
+              <ul class="container navbar-nav me-auto mb-2 mb-lg-0 nav_menu" style="float: right;">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://bit.ly/raghavShankar" target="_blank">Resume &nbsp;<i class="fa-regular  fa-file-code"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/raghavshankar99/" target="_blank">LinkedIn &nbsp;<i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/shingu99" target="_blank">Github  &nbsp;<i class="fa-brands  fa-github"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#foot" onclick="contactClick()">Contact  &nbsp;<i class="fa-solid  fa-address-book"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <hr style="color: rgb(255, 255, 255); border: 2px dotted;" class="container" id="hrTag" >
+<br>
+<br>
+        <div class="container">
+          <div class="row">
+            <img src="img/DSC02010.jpg" alt="photo" class="col-sm-4" id="chehra" style="border-radius: 100%; ">
+
+            <div class="card offset-2 col-sm-6" id="webdev">
+              <div class="card-header" style="text-align: center; border-bottom-color: white;">
+                <h3 id="webCardHead">A Web Developer</h3>
+              </div>
+              <div class="card-body" id="webCardBody">
+                
+                <p class="webCardP">
+                  As a graduate student in Computer Science, I offer a strong academic background complemented 
+                  by hands-on experience in web development and programming. With internships at Collabera Inc. 
+                  and Hindustan Petroleum Corporation Limited, I've demonstrated my ability to revamp systems, 
+                  boost user engagement, and optimize efficiency using a diverse range of technologies.
+                </p>
+                <p class="webCardP">
+                  In my academic and professional roles, I've led impactful projects like TriageOne, leveraging 
+                  technologies such as NodeJS, ExpressJS, ReactJS, and MongoDB to drive performance and user 
+                  experience enhancements. Additionally, my commitment to mentoring peers and continuous learning,
+                  evidenced by certifications like AWS Cloud Practitioner, makes me a valuable asset to any software 
+                  engineering team.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Navbar -->
+      </header>
+      <div class="container">
+        <div class="row" style="height: 300px;">
+          
+          <a href="#section1" id="arrowDown" onclick="arrDownClick()" style="text-decoration: dotted;">
+            <h5 class="col-sm-12" style="text-align: center;">Projects</h5>
+            <i class="fa-solid fa-lg fa-arrow-down col-sm-12" style="text-align: center;"></i>
+          </a>
+          
+        </div>
+
+        <div id="section1" style="height: 1350px;">
+          <div class="row justify-content-center"  data-aos="fade-left" data-aos-easing="linear"  data-aos-duration="800" style="text-align: justify;">
+
+            <div class="card col-sm-2 projects" style="width: 18rem;">
+              <img class="card-img-top" src="img/aws.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Frame Recognition using AWS Lambda</h5>
+                <hr style="color: rgb(255, 255, 255); border: 1px dashed;" class="container" >
+                <p class="card-text">
+                  Developed a high-performance face recognition system on AWS Lambda, 
+                  processing 200 videos in seconds, handling 100 concurrent requests 
+                  within a minute, and scaling dynamically to 15 instances.
+                  </p>
+                  <div style="text-align: center;">
+                    <button class="btn btn-md btn-danger cardBtn">
+                      <a href="https://github.com/shingu99/Frame-Recognition-using-AWS-Lambda" class="card-link"  target="_blank">Github <i class="fa-solid fa-angle-right"></i></a>
+                    </button>
+                  </div>
+              </div>
+              
+            </div>
+
+            <div class="card offset-1 col-sm-2 projects"  style="width: 18rem;">
+              <img class="card-img-top" src="https://static.vecteezy.com/system/resources/previews/027/127/457/original/star-wars-logo-star-wars-icon-transparent-free-png.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Star Wars Blog</h5>
+                <hr style="color: rgb(255, 255, 255); border: 1px dashed;" class="container" >
+                <p class="card-text">Implemented a responsive blog website with ExpressJS, enabling dynamic blog management for seamless user interaction, and deployed a local server connected to MongoDB through NodeJS to optimize data storage and retrieval.</p>
+                <div style="text-align: center;">
+                  <button class="btn btn-md btn-danger cardBtn">
+                    <a href="https://github.com/shingu99/Star-wars-blog" class="card-link"  target="_blank">Github <i class="fa-solid fa-angle-right"></i></a>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="card offset-1 col-sm-2 projects"  style="width: 18rem;">
+              <a href="https://shingu99.github.io/Value-based-Sudoku/"  target="_blank" class="hoverReveal">
+                <img class="card-img-top" src="https://png.pngtree.com/png-vector/20221208/ourmid/pngtree-sudoku-easy-puzzles-png-image_6515582.png" alt="Card image cap">
+              </a>
+              <div class="hide">
+                Play the Game.
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Value Based Sudoku</h5>
+                <hr style="color: rgb(255, 255, 255); border: 1px dashed;" class="container" >
+                <p class="card-text">This is a remake of the Sudoku game, with value drawings. 
+                  Fill in the grid so that every horizontal row, every vertical column and every 
+                  3x3 box contains the 9 drawings without repeating the drawings in the same row, 
+                  column or box.</p>
+                <div style="text-align: center;">
+                  <button class="btn btn-md btn-danger cardBtn">
+                    <a href="https://github.com/shingu99/Value-based-Sudoku" class="card-link"  target="_blank">Github <i class="fa-solid fa-angle-right"></i></a>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            
+
+          </div>
+<br>
+<br>
+          <div class="row justify-content-center" data-aos="fade-right" data-aos-easing="linear"  data-aos-duration="600"  style="text-align: justify;">
+
+            <div class="card col-sm-2 projects" style="width: 18rem;">
+              <img class="card-img-top" src="https://pngimg.com/d/phone_hand_PNG15.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Mobile Offloading</h5>
+                <hr style="color: rgb(255, 255, 255); border: 1px dashed;" class="container" >
+                <p class="card-text">
+                  Created an Android app enabling message and data transfer via WiFi Hotspot, 
+                  ensuring uninterrupted communication during signal loss or poor network
+                   conditions, which works by detecting wifi networks around you to connect in absence of network.</p>
+                <div style="text-align: center;">
+                  <button class="btn btn-md btn-danger cardBtn">
+                    <a href="https://github.com/shingu99/Mobile-Offloading" class="card-link"  target="_blank">Github <i class="fa-solid fa-angle-right"></i></a>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="card offset-1 col-sm-2 projects"  style="width: 18rem;">
+              <img class="card-img-top" src="img/modelSim.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Package Delivery Route Optimization Model</h5>
+                <hr style="color: rgb(255, 255, 255); border: 1px dashed;" class="container" >
+                <p class="card-text">Implemented modeling and simulation to combat delivery 
+                  service inefficiencies caused by online shopping growth. Real-time tracking
+                   of package load and congestion enabled proactive route planning, reducing late deliveries.</p>
+                <div style="text-align: center;">
+                  <button class="btn btn-md btn-danger cardBtn">
+                    <a href="https://github.com/shingu99/Modeling-Simulation" class="card-link"  target="_blank">Github <i class="fa-solid fa-angle-right"></i></a>
+                  </button>
+                </div>
+              </div>
+              
+                
+              
+            </div>
+
+            <div class="card offset-1 col-sm-2 projects" style="width: 18rem;">
+              <a href="https://shingu99.github.io/AmaKart%20Changed/Web%20programming%20assgn.html"  target="_blank" class="card-link hoverReveal">
+                <img class="card-img-top" src="img/amaKart.png" alt="Card image cap">
+              </a>
+              <div class="hide">
+                Go Shopping.
+              </div>
+              
+              <div class="card-body">
+                <h5 class="card-title">AmaKart Shopping</h5>
+                <hr style="color: rgb(255, 255, 255); border: 1px dashed;" class="container" >
+                <p class="card-text">Developed a project website aggregating deals from multiple shopping platforms,
+                   utilizing HTML, CSS, JavaScript, jQuery, and Bootstrap, enhancing user accessibility and offering 
+                   a comprehensive platform for streamlined shopping experiences.</p>
+                <div style="text-align: center;">
+                  <button class="btn btn-md btn-danger cardBtn">
+                    <a href="https://github.com/shingu99/shingu99.github.io" class="card-link"  target="_blank">Github <i class="fa-solid fa-angle-right"></i></a>
+                  </button>
+                </div>
+              </div>
+              
+            </div>
+            
+
+          </div>
+        </div>
+      </div>
+      
+      <div style="height: 400px; background-image: linear-gradient(black, white);">
+        <div class="row justify-content-center">
+          <a href="#head1" id="arrowUp" class="hide" onclick="arrUpClick()" style="text-decoration: none;">
+            <i class="fa-solid fa-lg fa-arrow-up col-sm-12" style="text-align: center;"></i>
+            <h5 class="col-sm-12" style="text-align: center;" >Going up?</h5>
+          </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="foot" class="row container footer" style="text-align: center;">
+          <a class="offset-5 col-sm-3" href="mailto:raghavshankar99@gmail.com"><h4 >raghavshankar99@gmail.com</h4></a>
+          <a class="offset-2 col-sm-2" href="tel:4807913636"><h4 >(480) 791-3636</h4></a>
+        </div>
+        <hr style="color: rgb(255, 0, 0); border: 1px dashed;" class="container" >
+
+        <div class="container row hoverReveal" style="text-align: center; font-family: 'M PLUS 1', sans-serif; padding-right: 30px; color: black;">
+          <h4 class="offset-8 col-sm-2">
+            ありがとう
+          </h4>
+        </div>
+        <div class="container row hide" style="text-align: center; font-family: 'M PLUS 1', sans-serif; padding-right: 30px; color: black;">
+          <h5 class="offset-8 col-sm-2">
+            Thank you
+          </h5>
+        </div>
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+       <!-- ==== ANIMATE ON SCROLL JS CDN -->
+       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <!-- ==== GSAP CDN ==== -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+       <!-- ==== SCRIPT.JS ==== -->
+       <script src="./script1.js" defer></script>
+  </body>
+</html>
