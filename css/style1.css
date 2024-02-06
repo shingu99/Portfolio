@@ -16,6 +16,12 @@ body
   font-family: 'Quicksand', sans-serif;
 }
 
+.navbar-toggler
+{
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
 .card
 {
   background-color: black;
@@ -92,4 +98,36 @@ body
   font-family: 'Fjalla One', sans-serif;
   text-decoration: none;
   color: white;
+}
+
+.navbar-hr{
+  display: none;
+}
+
+.modal-content{
+  background-color: black;
+  border-color: white;
+}
+
+@media screen and (max-width: 480px)
+{
+  body{
+    overflow-x: hidden;
+    
+  }
+  .navbar-nav{
+    padding-left: 80px;
+  }
+  .navbar-hr{
+    display: block;
+    width: 40%;
+  }
+  
+  #webdev{
+    width: fit-content;
+  }
+  .hideMobile{
+    display: none;
+  }
+  
 }

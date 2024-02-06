@@ -8,8 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <!-- ==== STYLE.CSS ==== -->
+        <!-- ==== STYLE.CSS ==== -->
     <link rel="stylesheet" href="css/style1.css" />
 
     <!-- ====  REMIXICON CDN ==== -->
@@ -35,26 +34,29 @@
         <!-- Navbar -->
         <nav class=" navbar navbar-expand-lg navbar-light container">
           <div class="container row">
-            <div class="col-sm-3" style="text-align: center; padding-top: 20px; font-family: 'Rock Salt', cursive;">
+            <div class="col-sm-3 col-10" style="text-align: center; padding-top: 20px; font-family: 'Rock Salt', cursive;">
               <h3 id="myName">Raghav Shankar</h3>
             </div>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-              data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <i class="fas fa-bars"></i>
+            <button class="navbar-toggler col-2" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false"
+              aria-label="Toggle navigation" style="color: white;">
+              <i class="fas fa-bars"></i> 
             </button>
             
             <div class="collapse navbar-collapse container offset-3 col-sm-7" id="navbarExample01" >
-              <ul class="container navbar-nav me-auto mb-2 mb-lg-0 nav_menu" style="float: right;">
+              <ul class="container navbar-nav nav_menu">
                 <li class="nav-item">
                   <a class="nav-link" href="https://bit.ly/raghavShankar" target="_blank">Resume &nbsp;<i class="fa-regular  fa-file-code"></i></a>
                 </li>
+                <hr style="color: rgb(255, 255, 255); border: 2px dotted;" class="container navbar-hr" id="hrTag" >
                 <li class="nav-item">
                   <a class="nav-link" href="https://www.linkedin.com/in/raghavshankar99/" target="_blank">LinkedIn &nbsp;<i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
+                <hr style="color: rgb(255, 255, 255); border: 2px dotted;" class="container navbar-hr" id="hrTag" >
                 <li class="nav-item">
                   <a class="nav-link" href="https://github.com/shingu99" target="_blank">Github  &nbsp;<i class="fa-brands  fa-github"></i></a>
                 </li>
+                <hr style="color: rgb(255, 255, 255); border: 2px dotted;" class="container navbar-hr" id="hrTag" >
                 <li class="nav-item">
                   <a class="nav-link" href="#foot" onclick="contactClick()">Contact  &nbsp;<i class="fa-solid  fa-address-book"></i></a>
                 </li>
@@ -67,13 +69,47 @@
 <br>
         <div class="container">
           <div class="row">
-            <img src="img/DSC02010.jpg" alt="photo" class="col-sm-4" id="chehra" style="border-radius: 100%; ">
+            <img src="img/DSC02010.jpg" alt="photo" class="col-sm-4 col-12 " id="chehra" style="border-radius: 100%; padding: 20px;">
 
-            <div class="card offset-2 col-sm-6" id="webdev">
-              <div class="card-header" style="text-align: center; border-bottom-color: white;">
-                <h3 id="webCardHead">A Web Developer</h3>
+            <!-- Modal -->
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">A Web Developer</h5>
+                    <button type="button btn btn-sm" class="close" data-bs-dismiss="modal" aria-label="Close" style="background-color: black; color: white; border: 1px solid white; border-radius: 25%;">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="webCardP">
+                      As a graduate student in Computer Science, I offer a strong academic background complemented 
+                      by hands-on experience in web development and programming. With internships at Collabera Inc. 
+                      and Hindustan Petroleum Corporation Limited, I've demonstrated my ability to revamp systems, 
+                      boost user engagement, and optimize efficiency using a diverse range of technologies.
+                    </p>
+                    <p class="webCardP">
+                      In my academic and professional roles, I've led impactful projects like TriageOne, leveraging 
+                      technologies such as NodeJS, ExpressJS, ReactJS, and MongoDB to drive performance and user 
+                      experience enhancements. Additionally, my commitment to mentoring peers and continuous learning,
+                      evidenced by certifications like AWS Cloud Practitioner, makes me a valuable asset to any software 
+                      engineering team.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div class="card-body" id="webCardBody">
+            </div>
+
+            <!-- Web developer Card -->
+            <div class="card offset-2 col-sm-6 col-12" id="webdev">
+              <div class="card-header" style="text-align: center; border-bottom-color: white;">
+                <a class="btn" data-bs-toggle="modal" href="#exampleModal" role="button" aria-expanded="false" aria-controls="exampleModal" style="color: white;">
+                  <h3 id="webCardHead">A Web Developer</h3>
+                </a>
+                
+              </div>
+              <div class="card-body hideMobile" id="webCardBody">
                 
                 <p class="webCardP">
                   As a graduate student in Computer Science, I offer a strong academic background complemented 
@@ -98,9 +134,9 @@
       <div class="container">
         <div class="row" style="height: 300px;">
           
-          <a href="#section1" id="arrowDown" onclick="arrDownClick()" style="text-decoration: dotted;">
-            <h5 class="col-sm-12" style="text-align: center;">Projects</h5>
-            <i class="fa-solid fa-lg fa-arrow-down col-sm-12" style="text-align: center;"></i>
+          <a href="#section1" id="arrowDown" onclick="arrDownClick()" style="text-decoration: none;">
+            <h5 class="col-7 col-sm-12" style="text-align: center;">Projects</h5>
+            <i class="fa-solid fa-lg fa-arrow-down col-4 col-sm-12" style="text-align: center;"></i>
           </a>
           
         </div>
@@ -270,7 +306,7 @@
 
       </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-       <!-- ==== ANIMATE ON SCROLL JS CDN -->
+        <!-- ==== ANIMATE ON SCROLL JS CDN -->
        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
        <!-- ==== GSAP CDN ==== -->
        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
