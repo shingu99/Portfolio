@@ -5,7 +5,7 @@ html {
 header{
     /* background-image: linear-gradient(black, white); */
     background-color: black;
-    height:800px;
+    height:750px;
 }
 
 body
@@ -34,12 +34,14 @@ body
 .card-title{
   text-align: center;
   font-family: 'Fjalla One', sans-serif;
+  padding: 15px;
 }
 
 #section1 button a{
   color: white;
   text-decoration: none;
 }
+
 
 .hoverReveal:hover + .hide{
   display: block;
@@ -109,11 +111,56 @@ body
   border-color: white;
 }
 
+#projectModallabel{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: large;
+}
+
+#projectModalBody a{
+  color: white;
+  text-decoration: none;
+}
+
+.arRow{
+  margin-left: 70px;
+}
 @media screen and (max-width: 480px)
 {
-  body{
+  html, body{
     overflow-x: hidden;
-    
+    max-width: 100%;
+    max-height: fit-content;
+  }
+  header{
+    height: 700px;
+  }
+  .arRow{
+    height: 50px;
+    margin-left: 0px;
+  }
+  .card{
+    margin-bottom: 20px;
+  }
+  .offset-1{
+    margin-right: 35px;
+  }
+  #section1
+  {
+    height: 1000px;
+    margin-bottom: 900px;
+    position: relative;
+  }
+  #section2{
+    bottom: 0;
+  }
+  #section2P1{
+    margin-bottom: 0px;
+  }
+  .footer{
+    margin-right: 80px;
+  }
+  .japanese{
+    margin-right: 55px;
   }
   .navbar-nav{
     padding-left: 80px;

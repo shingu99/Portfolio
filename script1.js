@@ -1,11 +1,12 @@
 
+
 // ==== Animate on Scroll Initialize  ==== //
 AOS.init();
 const scrBtn = document.getElementById("arrowDown");
 const scrUp = document.getElementById("arrowUp");
 const webCard = document.getElementById("webdev");
 
-let bounceBtn = scrBtn;
+
   
 gsap.from("#myName", {
    opacity: 0,
@@ -65,18 +66,6 @@ gsap.from(".nav_menu .nav-item", {
 
 
 
-//  function arrDownClick()
-//  {
-//     scrUp.classList.remove("hide");
-//     scrBtn.classList.add("hide");
-    
-//  }
-//  function arrUpClick()
-//  {
-//     scrBtn.classList.remove("hide");
-//     scrUp.classList.add("hide");
-    
-//  }
 
  function contactClick()
  {
@@ -104,4 +93,55 @@ gsap.from(".nav_menu .nav-item", {
   .to(scrUp, 0.5, { y: 0 })
   .repeat(-1);
 
- 
+const modaltitle = document.getElementById("projectModallabel"); 
+const modalBody = document.getElementById("projectModalBody");
+
+
+const awsBody = document.getElementById("awsCardBody");
+
+function insertDataAws()
+{
+  modaltitle.innerHTML = "Frame Recognition using AWS Lambda"
+  modalBody.innerHTML = awsBody.innerHTML;
+}
+
+const starBody = document.getElementById("starCardBody");
+
+function insertDataStar()
+{
+  modaltitle.innerHTML = "Star Wars Blog"
+  modalBody.innerHTML = starCardBody.innerHTML;
+}
+
+const sudBody = document.getElementById("sudokuCardBody");
+
+function insertDataSud()
+{
+  modaltitle.innerHTML = "Value Based Sudoku"
+  modalBody.innerHTML = sudBody.innerHTML;
+}
+
+const mobileCardBody = document.getElementById("mobileCardBody");
+
+function insertDataMob()
+{
+  modaltitle.innerHTML = "Mobile Offloading"
+  modalBody.innerHTML = mobileCardBody.innerHTML;
+}
+
+const modelCardBody = document.getElementById("modelCardBody");
+
+function insertDataMod()
+{
+  modaltitle.innerHTML = "Package Delivery Route Optimization Model"
+  modalBody.innerHTML = modelCardBody.innerHTML;
+}
+
+
+const amakartCardBody = document.getElementById("amakartCardBody");
+function insertDataAma()
+{
+  modaltitle.innerHTML = "AmaKart Shopping"
+  modalBody.innerHTML = amakartCardBody.innerHTML;
+}
+
