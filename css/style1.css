@@ -124,6 +124,10 @@ body
 .arRow{
   margin-left: 70px;
 }
+
+#invisSection{
+  display: none;
+}
 @media screen and (max-width: 480px)
 {
   html, body{
@@ -155,6 +159,9 @@ body
   }
   #section2P1{
     margin-bottom: 0px;
+  }
+  #invisSection{
+    display: block;
   }
   .footer{
     margin-right: 80px;
