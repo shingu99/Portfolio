@@ -5,7 +5,7 @@ html {
 header{
     /* background-image: linear-gradient(black, white); */
     background-color: black;
-    height:750px;
+    height:850px;
 }
 
 body
@@ -123,6 +123,7 @@ body
 
 .arRow{
   margin-left: 70px;
+  margin-top: 150px;
 }
 
 
@@ -137,11 +138,13 @@ body
     max-height: fit-content;
   }
   header{
-    height: 700px;
+    height: 1000px;
   }
   .arRow{
     height: 50px;
     margin-left: 0px;
+    position: static;
+    margin-top: 150px;
   }
   .card{
     margin-bottom: 20px;
