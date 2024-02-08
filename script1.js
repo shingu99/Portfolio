@@ -145,3 +145,20 @@ function insertDataAma()
   modalBody.innerHTML = amakartCardBody.innerHTML;
 }
 
+let tog = 1;
+const toggler = document.getElementById("navbarTogglerBtn");
+const itag = document.getElementById("navbarToggler");
+toggler.addEventListener("click", function() {
+  if(tog===1)
+  {
+    itag.classList.remove("fa-bars");
+    itag.classList.add("fa-xmark");
+    tog=0;
+  }
+  else{
+    itag.classList.remove("fa-xmark");
+    itag.classList.add("fa-bars");
+    tog=1;
+  }
+
+});
