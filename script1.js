@@ -138,11 +138,11 @@ function insertDataMod()
 }
 
 
-const amakartCardBody = document.getElementById("amakartCardBody");
-function insertDataAma()
+const accCardBody = document.getElementById("accCardBody");
+function insertDataAcc()
 {
-  modaltitle.innerHTML = "AmaKart Shopping"
-  modalBody.innerHTML = amakartCardBody.innerHTML;
+  modaltitle.innerHTML = "Accompanian"
+  modalBody.innerHTML = accCardBody.innerHTML;
 }
 
 let tog = 1;
